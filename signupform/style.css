@@ -1,0 +1,172 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    line-height: 1.5;
+}
+
+@font-face {
+    font-family: 'Norse';
+    src: url("./fonts/Norse-Bold.otf")format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+body {
+    display: flex;
+    width: 100%;
+}
+
+/* .bg-img {
+    height: 100vh;
+    position: absolute;
+} */
+
+.sidebg-container {
+    background: url('./tree.jpg');
+    background-size: cover;
+    height: 100vh;
+    width: auto;
+    background-position: center center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.odin-logo {
+    width: 75px;
+}
+
+.odin-logo-container {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 80px;
+    padding: 20px 120px;
+    background-color: rgb(0, 0, 0, 0.5);
+}
+
+.odin-logo-container > p {
+    font-family: 'Norse', Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 5.5rem;
+}
+
+.sidebg-container > p {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.sidebg-link, .sidebg-link:visited {
+    color: white;
+}
+
+.signup-container {
+    background-color: rgb(245, 244, 244);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.signup-container > div {
+    padding-left: 50px;
+    padding-right: 200px;
+}
+
+.signup-header {
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.signup-header > p:nth-child(3) {
+    padding-top: 15px;
+}
+
+.form-container {
+    background-color: white;
+    padding-top: 15px;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    box-shadow:  5px 0.5px 2px 3px rgba(0, 0, 0, 0.15);
+}
+
+.signup-footer {
+    width: 100%;
+}
+
+.login-link, .login-link:visited {
+    color: black;
+}
+
+.form-container > p {
+    font-size: 1.2rem;
+}
+
+input {
+    display: block;
+}
+
+form {
+    display:flex;
+    gap: 10px 40px;
+    flex-flow: row wrap;
+    width: 600px;
+    padding-top: 15px;
+    padding-bottom: 35px;
+}
+
+label {
+    font-size: 0.9rem;
+}
+
+input {
+    width: 250px;
+    padding: 2px 5px;
+    border-radius: 4px;
+    outline: none;
+    border: 2px solid rgba(0, 0, 0, 0.078);
+}
+
+input:focus {
+    outline: none;
+}
+
+input:focus, input:hover {
+    border: 2px solid rgb(0, 106, 255);
+}
+
+input[type="password"]:valid {
+    border: 2px solid rgba(3, 176, 3, 0.505)
+}
+
+input[type="password"]:invalid {
+    border: 2px solid rgba(255, 0, 0, 0.522)
+}
+
+#password:invalid + p::before {
+    content: "* Passwords do not match";
+    color: red;
+    font-size: 0.9rem;
+}
+
+#password:valid + p::before {
+    content: "";
+}
+
+button {
+    padding: 10px 75px;
+    border-radius: 6px;
+    background-color: #596D48;
+    color: white;
+    font-weight: 600;
+}
+
+.signup-footer > p {
+    margin-top: 10px;
+}
