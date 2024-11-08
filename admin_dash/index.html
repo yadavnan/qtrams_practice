@@ -1,82 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dashboard Layout</title>
-  <link rel="stylesheet" href="admin.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="admin.css">
 </head>
 <body>
 
- 
-  <aside class="sidebar">
-    <h2>Dashboard</h2>
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Profile</a></li>
-      <li><a href="#">Messages</a></li>
-      <li><a href="#">History</a></li>
-      <li><a href="#">Tasks</a></li>
-      <li><a href="#">Communities</a></li>
-      <li><a href="#">Settings</a></li>
-      <li><a href="#">Support</a></li>
-      <li><a href="#">Privacy</a></li>
-    </ul>
-  </aside>
-
-  
-  <header class="header">
-    <input type="text" placeholder="Search..." class="search-bar">
-    <div>
-      <button>New</button>
-      <button>Upload</button>
-      <button>Share</button>
+<div class="container">
+   <!-- maincontainerwhichcontaingallgrids -->
+    <div class="sidebar">
+      <!-- dashboard and its icon -->
+        <div class="sidebar-brand">
+            <span class="material-icons">dashboard</span>
+            <span>Dashboard</span>
+        </div>
+        <nav class="nav-links">
+            <div class="nav-item"><span class="material-icons">home</span>Home</div>
+            <div class="nav-item"><span class="material-icons">person</span>Profile</div>
+            <div class="nav-item"><span class="material-icons">message</span>Messages</div>
+            <div class="nav-item"><span class="material-icons">history</span>History</div>
+            <div class="nav-item"><span class="material-icons">task</span>Tasks</div>
+            <div class="nav-item"><span class="material-icons">groups</span>Communities</div>
+            <div class="frextrspc">
+            <div class="nav-item"><span class="material-icons">settings</span>Settings</div>
+            <div class="nav-item"><span class="material-icons">support</span>Support</div>
+            <div class="nav-item"><span class="material-icons">privacy_tip</span>Privacy</div>
+          </div>
+        </nav>
     </div>
-  </header>
 
-  
-  <main class="content">
-   
-    <section class="projects">
-      <h3>Your Projects</h3>
-      <div class="project-card">
-        <h4>Super Cool Project</h4>
-        <p>Sed tempus ut lacus ut scelerisque. Suspendisse sollicitudin nibh erat, id facilisis felis accumsan nec.</p>
-      </div>
-      <div class="project-card">
-        <h4>Less Cool Project</h4>
-        <p>Nullam condimentum ipsum ut lectus vehicula consectetur. Quisque sed dolor tincidunt.</p>
-      </div>
-      <div class="project-card">
-        <h4>Impossible App</h4>
-        <p>In hac habitasse platea dictumst. Vivamus dictum rutrum arcu, a placerat velit sagittis id.</p>
-      </div>
-      <div class="project-card">
-        <h4>Easy Peasy App</h4>
-        <p>Etiam cursus eros ac efficitur fringilla. Vestibulum dignissim urna eget accumsan aliquam.</p>
-      </div>
-    </section>
+    <header class="header">
+        <div class="header-left">
+            <img src="https://via.placeholder.com/50x50.png?text=MO" alt="Avatar for Morgan Oakley" class="avatar">
+            <div class="grttxt">
+                <p>Hi there,</p>
+                <h2>Morgan Oakley (@morgan)</h2>
+            </div>
+        </div>
+        <div class="search-bar">
+            <span class="material-icons">search</span>
+            <input type="search" placeholder="Search...">
+        </div>
+        <div class="header-right">
+            <button>New</button>
+            <button>Upload</button>
+            <button>Share</button>
+            <span class="material-icons">notifications</span>
+            <img src="https://via.placeholder.com/40x40.png?text=MO" alt="User Avatar" class="avatar">
+            <span>Morgan Oakley</span>
+        </div>
+    </header>
 
-    
-    <section>
-      <
-      <div class="announcements">
-        <h3>Announcements</h3>
-        <div class="announcement">Site Maintenance - Vestibulum condimentum tellus lacus.</div>
-        <div class="announcement">Community Share Day - Nam vel lectus tincidunt.</div>
-        <div class="announcement">Updated Privacy Policy - Phasellus efficitur nisi eget.</div>
-      </div>
+    <main class="main-content">
+        <div class="projects">
+            <div class="project-card">
+                <h3>Super Cool Project</h3>
+                <p>Sed tempus ut lacus ut scelerisque. Suspendisse sollicitudin nibh erat, id facilisis felis accumsan nec.</p>
+                <div class="project-actions">
+                    <span class="material-icons">star_border</span>
+                    <span class="material-icons">share</span>
+                    <span class="material-icons">visibility</span>
+                </div>
+            </div>
+            <div class="project-card">
+                <h3>Less Cool Project</h3>
+                <p>Nullam condimentum ipsum ut lectus vehicula consectetur. Quisque sed dolor tincidunt, consectetur sapien et, facilisis dolor.</p>
+                <div class="project-actions">
+                    <span class="material-icons">star_border</span>
+                    <span class="material-icons">share</span>
+                    <span class="material-icons">visibility</span>
+                </div>
+            </div>
+            <div class="project-card">
+                <h3>Impossible App</h3>
+                <p>In hac habitasse platea dictumst. Vivamus dictum rutrum arcu, a placerat velit sagittis id.</p>
+                <div class="project-actions">
+                    <span class="material-icons">star_border</span>
+                    <span class="material-icons">share</span>
+                    <span class="material-icons">visibility</span>
+                </div>
+            </div>
+            <div class="project-card">
+                <h3>Easy Peasy App</h3>
+                <p>Etiam cursus eros ac efficitur fringilla. Vestibulum dignissim urna eget accumsan aliquam.</p>
+                <div class="project-actions">
+                    <span class="material-icons">star_border</span>
+                    <span class="material-icons">share</span>
+                    <span class="material-icons">visibility</span>
+                </div>
+            </div>
+            <div class="project-card">
+                <h3>Ad Blocker</h3>
+                <p>Quisque eget rutrum nisl. Nam augue justo, cursus vitae metus vel, pharetra hendrerit felis.</p>
+                <div class="project-actions">
+                    <span class="material-icons">star_border</span>
+                    <span class="material-icons">share</span>
+                    <span class="material-icons">visibility</span>
+                </div>
+            </div>
+            <div class="project-card">
+                <h3>Money Maker</h3>
+                <p>Praesent convallis, libero quis congue elementum, nunc ante faucibus sapien, ac scelerisque tortor purus sit amet ex.</p>
+                <div class="project-actions">
+                    <span class="material-icons">star_border</span>
+                    <span class="material-icons">share</span>
+                    <span class="material-icons">visibility</span>
+                </div>
+            </div>
+        </div>
 
-     
-      <div class="trending">
-        <h3>Trending</h3>
-        <div class="trending-item"><img src="https://via.placeholder.com/30" alt="User"> @tegan - World Peace Builder</div>
-        <div class="trending-item"><img src="https://via.placeholder.com/30" alt="User"> @morgan - Super Cool Project</div>
-        <div class="trending-item"><img src="https://via.placeholder.com/30" alt="User"> @kendall - Life Changing App</div>
-        <div class="trending-item"><img src="https://via.placeholder.com/30" alt="User"> @alex - No Traffic Maker</div>
-      </div>
-    </section>
-  </main>
+        <div class="side-content">
+            <h3>Announcements</h3>
+            <div class="announcements">
+                <div class="announcement-item">
+                    <h4>Site Maintenance</h4>
+                    <p>System maintenance scheduled for Friday...</p>
+                </div>
+                <div class="announcement-item">
+                    <h4>Community Share Day</h4>
+                    <p>Join us for our monthly community sharing...</p>
+                </div>
+            </div>
+            <h3>Trending</h3>
+            <div class="trending">
+                
+                <div class="trending-item">
+                    <img src="img/dog-side.svg" alt="Avatar for Tegan" class="avatar">
+                    <div>
+                        <span>@tegan</span>
+                        <p>World Peace Builder</p>
+                    </div>
+                </div>
+                <div class="trending-item">
+                    <img src="img/emoticon-sick.png" alt="Avatar for Morgan" class="avatar">
+                    <div>
+                        <span>@morgan</span>
+                        <p>Super Cool Project</p>
+                    </div>
+                </div>
+                <div class="trending-item">
+                    <img src="https://via.placeholder.com/40x40.png?text=K" alt="Avatar for Kendall" class="avatar">
+                    <div>
+                        <span>@kendall</span>
+                        <p>Life Changing App</p>
+                    </div>
+                </div>
+                <div class="trending-item">
+                    <img src="https://via.placeholder.com/40x40.png?text=A" alt="Avatar for Alex" class="avatar">
+                    <div>
+                        <span>@alex</span>
+                        <p>No Traffic Maker</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>
 
 </body>
 </html>
