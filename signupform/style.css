@@ -81,7 +81,7 @@ body {
 
 .signup-header {
     font-size: 1.3rem;
-    font-weight: 600;
+    font-weight: 100;
 }
 
 .signup-header > p:nth-child(3) {
