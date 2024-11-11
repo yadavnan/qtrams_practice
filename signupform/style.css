@@ -50,8 +50,8 @@ body {
     flex-direction: column;
     align-items: center;
     margin-left: 200px;
-    margin-top: 200px;
-    margin-bottom: 200px;
+    
+    margin-bottom: 50px;
    
     
    
@@ -98,8 +98,8 @@ body {
     flex-direction: column;
     justify-content: center;
     margin-right: 200px;
-    margin-top: 200px;
-    margin-bottom: 200px;
+   
+    margin-bottom: 50px;
    
 }
 

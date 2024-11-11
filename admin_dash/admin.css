@@ -39,6 +39,7 @@
 .nav-links {
     display: grid;
     gap: 20px;
+   
 }
  
 .nav-item {
