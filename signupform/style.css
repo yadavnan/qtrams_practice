@@ -3,6 +3,20 @@
     padding: 0;
     margin: 0;
     line-height: 2;
+   
+   
+   
+}
+body {
+    display: flex;
+    margin-inline: auto;
+
+    min-height: 100vh;
+}
+
+
+html {
+    background-color: #202020;
 }
 
 @font-face {
@@ -15,12 +29,15 @@
 body {
     display: flex;
     width: 100%;
+    
+    justify-content: center;
+    align-items: center ;
 }
 
 /* .bg-img {
     height: 100vh;
-    position: absolute;
-} */
+    position: absolute; } */
+
 
 .sidebg-container {
     background: url('./tree.jpg');
@@ -32,6 +49,14 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-left: 200px;
+    margin-top: 200px;
+    margin-bottom: 200px;
+   
+    
+   
+    
+
 }
 
 .odin-logo {
@@ -44,7 +69,7 @@ body {
     justify-content: center;
     align-items: center;
     gap: 15px;
-    margin-top: 80px;
+    margin-top: 500px;
     padding: 20px 120px;
     background-color: rgb(0, 0, 0, 0.5);
 }
@@ -72,33 +97,57 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-right: 200px;
+    margin-top: 200px;
+    margin-bottom: 200px;
+   
 }
 
 .signup-container > div {
-    padding-left: 50px;
-    padding-right: 200px;
+    padding-left: 20px;
+    padding-right: 40px;
 }
 
 .signup-header {
-    font-size: 1.3rem;
-    font-weight: 100;
+    
+    font-weight: 50px;
+    
+font-style: bold;}
+
+/* p{
+    margin-top: 5px; 
+} */
+.vin{
+    margin-top: 50px; 
+    font-weight: bold;
+
+
+
+}
+.vinc{
+    
+    font-weight: bold;
+
+
 }
 
-.signup-header > p:nth-child(3) {
-    padding-top: 15px;
-}
+/* .signup-header > p:nth-child(1) {
+    /* padding-top: 1px; */
+    /* margin-top: 5px; */
+    /* margin-bottom: 10px;} */
+ 
+
 
 .form-container {
     background-color: white;
-    padding-top: 15px;
-    margin-top: 15px;
-    margin-bottom: 25px;
+    padding-top: 0;
+    height: 450px;
+    /* margin-top: 15px;
+    margin-bottom: 25px; */
     box-shadow:  5px 0.5px 2px 3px rgba(0, 0, 0, 0.15);
 }
 
-.signup-footer {
-    width: 100%;
-}
+
 
 .login-link, .login-link:visited {
     color: black;
@@ -117,8 +166,8 @@ form {
     gap: 10px 40px;
     flex-flow: row wrap;
     width: 600px;
-    padding-top: 15px;
-    padding-bottom: 35px;
+    padding-top: 10px;
+    padding-bottom: 15px;
 }
 
 label {
@@ -154,19 +203,29 @@ input[type="password"]:invalid {
     color: red;
     font-size: 0.8rem;
 }
+#confirm-password{
+   
+   border-color:  red;
+    
+}
 
 #password:valid + p::before {
     content: "";
 }
 
 button {
-    padding: 10px 75px;
+    padding: 5px 40px;
     border-radius: 6px;
     background-color: #596D48;
     color: white;
-    font-weight: 600;
+    font-weight: 150;
 }
 
 .signup-footer > p {
-    margin-top: 10px;
+    margin-top: 5px;
 }
+.signup-footer {
+    height: 400px;
+    padding: 20px;
+}
+    
