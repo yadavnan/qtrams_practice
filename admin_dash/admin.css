@@ -11,12 +11,21 @@
     display: inline-block;
     vertical-align: middle;
 }
+
+body{
+    background-color: black;
+    align-items: start;
+    overflow: hidden;
+}
  
 .container {
     display: grid;
     grid-template-columns: 250px 1fr;
     grid-template-rows: auto 1fr;
     min-height: 100vh;
+    transform: scale(0.8);
+    margin-top: -76px;
+    /* top: 0; */
 }
  
 /* Sidebar Styles */
@@ -105,7 +114,7 @@
     padding: 8px;
     border-radius: 15px;
     border: none;
-    background-color: #e2e8f0;
+    background-color: #909295;
 }
  
 .header-right {
@@ -119,7 +128,7 @@
     padding: 8px 16px;
     border: none;
     border-radius: 8px;
-    background-color: #1992d4;
+    background-color: #19d4b2;
     color: white;
     cursor: pointer;
 }
@@ -133,7 +142,7 @@
  
 /* Main Content Styles */
 .main-content {
-    background-color: #f3f4f6;
+    background-color: #96b4f2;
     padding: 20px;
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -150,7 +159,7 @@
     background-color: white;
     padding: 20px;
     border-radius: 8px;
-    border-left: 8px solid #f0b429;
+    border-left: 8px solid #29f09d;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     position: relative; /* Ensures each card can position its children absolutely */
    /* Optional padding for content inside the card */
