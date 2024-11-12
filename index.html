@@ -4,26 +4,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Navigator</title>
-  <link rel="stylesheet" href="ti.css">
+  <link rel="stylesheet" href="./navigator.css">
 </head>
-<body style="display: flex; justify-content: center; align-items: center;height: 100vh;">
-  
-  
-  <div id="gameboard">
-    <h1>Pojects by vinay</h1>
-    <!-- 9 Divs for 3x3 grid cells -->
-    <div class="box">
-      <label for="signupform" onclick="window.open('./signupform','_blank')">Signup Form</label>
-    </div>
-    <div class="box">
-      <label for="admin_dash" onclick="window.open('./admin_dash','_blank')">Admin Dashboard</label>
-    </div>
-    
-    <div class="box">
-        <label for="library" onclick="window.open('./library','_blank')">Library</label>
-    </div>
-    <div class="box"></div>
-        <label for="tictactoe" onclick="window.open('./tictactoe','_blank')">Tic Tac Toe Game(inprogress)</label>
+<body>
+  <div class="container">
+    <div class="form-container">
+      <h1>Projects by Vinay</h1>
+      <div class="form-row" data-preview="Signup Form - Create your account here.">
+        <label onclick="window.open('./signupform', '_blank')">Signup Form</label>
+      </div>
+      <div class="form-row" data-preview="Admin Dashboard - Manage all the site details.">
+        <label onclick="window.open('./admin_dash', '_blank')">Admin Dashboard</label>
+      </div>
+      <div class="form-row" data-preview="Library - Explore the available books.">
+        <label onclick="window.open('./library', '_blank')">Library</label>
+      </div>
+      <div class="form-row" data-preview="Tic Tac Toe - Play the classic game.">
+        <label onclick="window.open('./tictactoe', '_blank')">Tic Tac Toe</label>
+      </div>
     </div>
   </div>
 </body>
