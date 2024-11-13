@@ -1,30 +1,31 @@
-
+/* style.css */
 
 body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-  }
-  
-  #gameboard {
-    display: grid;
-    grid-template-columns: repeat(3, 90px);
-    grid-gap: 5px;
-    margin: 20px auto;
-    width: 300px;
-  }
-  
-  .box {
-    background-color: #f4f4f4;
-    border: 1px solid #333;
-    height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 2em;
-  }
-  
-  button {
-    margin-top: 20px;
-    padding: 10px 20px;
-  }
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+#gameboard {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-gap: 5px;
+  margin: 20px auto;
+  width: 320px;
+}
+
+.cell {
+  background-color: #f4f4f4;
+  border: 1px solid #333;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2em;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+}
+
   
