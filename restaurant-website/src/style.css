@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  header h1 {
+    margin-bottom: 1rem;
+  }
+  
+  nav {
+    margin: 1rem 0;
+  }
+  
+  nav button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    background-color: #444;
+    color: white;
+    cursor: pointer;
+  }
+  
+  nav button:hover {
+    background-color: #666;
+  }
+  
+  main {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .section {
+    display: none; /* Hide sections by default */
+  }
+  
+  #home {
+    display: block; /* Show home section by default */
+  }
+  
+  #foodImage {
+    width: 100%;
+    height: auto;
+    margin-top: 1rem;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
