@@ -146,7 +146,7 @@ function prependNode() {
         return;
     }
     list.prepend(value);
-    displayList();
+    // displayList();
 }
 
 function appendNode() {
@@ -156,7 +156,7 @@ function appendNode() {
         return;
     }
     list.append(value);
-    displayList();
+    // displayList();
 }
 
 function insertNode() {
@@ -167,7 +167,7 @@ function insertNode() {
         return;
     }
     list.insertAt(value, index);
-    displayList();
+    // displayList();
 }
 
 function removeNode() {
@@ -177,7 +177,7 @@ function removeNode() {
         return;
     }
     list.removeAt(index);
-    displayList();
+    // displayList();
 }
 
 function popNode() {
@@ -206,4 +206,9 @@ function findNode() {
 function displayList() {
     const output = document.getElementById("output");
     output.innerHTML = `<strong>Linked List:</strong> ${list.toString()}`;
+}
+
+function setalert(message){
+    const output = document.getElementById("output");
+    output.innerHTML = `Element ${message} successfuly`;
 }
