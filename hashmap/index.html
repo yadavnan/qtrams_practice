@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hash Map UI</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+
+        .input-group {
+            margin-bottom: 15px;
+        }
+
+        .input-group input {
+            padding: 8px;
+            margin-right: 10px;
+            width: calc(50% - 10px);
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        .input-group button {
+            padding: 10px 15px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+            width: 100px;
+        }
+
+        .input-group button:hover {
+            background-color: #2980b9;
+        }
+
+        #result {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #ecf0f1;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        #output {
+            font-family: 'Courier New', Courier, monospace;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        .button-container {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Hash Map Operations</h1>
+
+        <div class="input-group">
+            <input type="text" id="key" placeholder="Key">
+            <input type="text" id="value" placeholder="Value">
+            <button onclick="addKeyValue()">Add/Update</button>
+        </div>
+
+        <div class="input-group">
+            <input type="text" id="getKey" placeholder="Key to Get">
+            <button onclick="getValue()">Get Value</button>
+        </div>
+
+        <div class="input-group">
+            <input type="text" id="removeKeyInput" placeholder="Key to Remove">
+            <button onclick="removeKey()">Remove Key</button>
+        </div>
+
+        <div class="button-container">
+            <button onclick="clearMap()">Clear Hash Map</button>
+            <button onclick="showDetails()">Show Details</button>
+        </div>
+
+        <div id="result">
+            <h3>Result:</h3>
+            <pre id="output">No operations performed yet.</pre>
+        </div>
+    </div>
+
+    <!-- Link to your external JavaScript file -->
+    <script src="hashMap.js"></script>
+    <script>
+        // UI functions calling the hash map functions defined in the external JS file
+
+        function addKeyValue() {
+            const key = document.getElementById('key').value;
+            const value = document.getElementById('value').value;
+
+            if (key && value) {
+                test.set(key, value);
+                showDetails();
+            }
+        }
+
+        function getValue() {
+            const key = document.getElementById('getKey').value;
+            const value = test.get(key);
+            document.getElementById('output').textContent = value !== null ? `Value: ${value}` : `Key not found`;
+        }
+
+        function removeKey() {
+            const key = document.getElementById('removeKeyInput').value;
+            const success = test.remove(key);
+            document.getElementById('output').textContent = success ? `Key "${key}" removed` : `Key not found`;
+            showDetails();
+        }
+
+        function clearMap() {
+            test.clear();
+            showDetails();
+        }
+
+        function showDetails() {
+            const keys = test.keys();
+            const values = test.values();
+            const entries = test.entries();
+            const length = test.length();
+
+            const result = `
+            Total Entries: ${length}
+            Keys: ${keys.join(', ')}
+            Values: ${values.join(', ')}
+            Entries: ${entries.map(entry => entry.join(': ')).join(', ')}
+            `;
+            document.getElementById('output').textContent = result;
+        }
+    </script>
+
+</body>
+</html>
