@@ -146,7 +146,6 @@ function prependNode() {
         return;
     }
     list.prepend(value);
-    // displayList();
 }
 
 function appendNode() {
@@ -156,7 +155,6 @@ function appendNode() {
         return;
     }
     list.append(value);
-    // displayList();
 }
 
 function insertNode() {
@@ -167,7 +165,6 @@ function insertNode() {
         return;
     }
     list.insertAt(value, index);
-    // displayList();
 }
 
 function removeNode() {
@@ -177,7 +174,6 @@ function removeNode() {
         return;
     }
     list.removeAt(index);
-    // displayList();
 }
 
 function popNode() {
