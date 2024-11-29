@@ -63,17 +63,17 @@ body {
   }
   
   .highlight {
-    background-color: #4caf50 !important; 
+    background-color: #4ca5af !important; 
     color: white;
   }
   
   .start {
-    background-color: #1e90ff !important; 
+    background-color: #ff561e !important; 
     color: white;
   }
   
   .target {
-    background-color: #ff5722 !important; 
+    background-color: #22ff64 !important; 
     color: white;
   }
   
