@@ -124,7 +124,7 @@ const createNode = (data = null, left = null, right = null) => ({
     return buildTree(nodes); 
   };
   
-  // Pretty Print Function (for visualization)
+  
   const prettyPrint = (node, prefix = "", isLeft = true) => {
     if (node === null) return;
     if (node.right) prettyPrint(node.right, `${prefix}${isLeft ? "│   " : "    "}`, false);
@@ -132,7 +132,7 @@ const createNode = (data = null, left = null, right = null) => ({
     if (node.left) prettyPrint(node.left, `${prefix}${isLeft ? "    " : "│   "}`, true);
   };
   
-  // Driver Code for Testing
+  
   //const randomArray = Array.from({ length: 15 }, () => Math.floor(Math.random() * 100)); // Random array of 15 numbers
   const randomArray = [1, 7, 4, 23, 8, 9, 4, 3, 5, 7, 9, 67, 6345, 324]; // Provided input array
 
