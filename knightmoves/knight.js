@@ -90,7 +90,7 @@ function knightMoves(start, target) {
     const path = knightMoves([startY, startX], [targetY, targetX]); 
   
     if (path.length > 0) {
-      resultDiv.innerHTML = `<p>You made it in ${path.length - 1} moves! Here's your path:</p>`;
+      resultDiv.innerHTML = `<p>You made it in ${path.length - 1} moves! Here'S your path:</p>`;
       resultDiv.innerHTML += path.map(pos => `[${pos[1]}, ${pos[0]}]`).join(' → ');
       highlightPath(path);
     } else {
