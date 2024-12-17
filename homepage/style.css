@@ -103,29 +103,20 @@ main {
     margin: 0 auto 10rem;   
 }
 
-/* .card__screenshot {
-    font-family: "Playfair Display", serif;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    color: white;
-    font-size: 3rem;
-    padding: 3rem 0.8rem 4rem 0.8rem;
-} */
 .card__screenshot {
     width: 100%;
     aspect-ratio: 16 / 9; /* Consistent width-to-height ratio */
-    overflow: hidden; /* Prevents content overflow */
-    border-radius: 8px; /* Optional: Rounded corners */
-    background-color: #f0f0f0; /* Optional: Fills empty spaces with a neutral color */
+    overflow: hidden; 
+    border-radius: 8px; 
+    background-color: #f0f0f0; 
 }
 
 
 .card__screenshot img {
-    width: 100%; /* Ensures the image scales to the container width */
-    height: 100%; /* Ensures the image scales to the container height */
+    width: 100%; 
+    height: 100%; 
     object-fit: contain; /* Entire image fits within the container without cropping */
-    object-position: center; /* Centers the image */
+    object-position: center; 
 }
 
 
